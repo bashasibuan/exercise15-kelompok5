@@ -28,3 +28,18 @@ function gcd_two_numbers(x, y) {
     return x;
   }
   console.log(gcd_two_numbers(12, 13));
+
+  //Soal3
+  let lcm = (n1, n2) => {
+    let lar = Math.max(n1, n2);
+    let small = Math.min(n1, n2);
+    
+    let i = lar;
+    while(i % small !== 0){
+      i += lar;
+    }
+    
+    return i;
+  }
+
+  console.log(lcm(20, 15));
