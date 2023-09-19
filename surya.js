@@ -18,4 +18,5 @@ function longestPrefix(arr) {
 	return result;
 }
 
-export default longestPrefix();
+// export default longestPrefix();
+module.exports = longestPrefix();
