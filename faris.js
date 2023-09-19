@@ -14,3 +14,17 @@ function copyHal(arr) {
     function hariKeBulan(bulan, tahun) {
         return new Date(tahun, bulan, 0).getDate();
     }
+
+    // Write a code to get the number of days in a month
+
+function Kalender() {
+	let tanggal = new Date();
+	let bulan = tanggal.getMonth() - 7;
+	let tahun = tanggal.getFullYear();
+	
+    console.log("Jumlah hari pada "  + bulan
+		+ " bulan, tahun " + tahun
+		+ " adalah " + hariKeBulan(bulan, tahun));
+}
+Kalender()
+
