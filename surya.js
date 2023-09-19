@@ -1,4 +1,4 @@
-export function tanpaSort(inputString) {
+function tanpaSort(inputString) {
 
     const char = inputString.split('');
     
@@ -17,10 +17,12 @@ export function tanpaSort(inputString) {
     return char.join('');
   }
 
-export function pakaiSort(inputString) {
+function pakaiSort(inputString) {
 
     const char = inputString.split('');
 
     return char.sort().join('');
   }
 
+  module.exports = tanpaSort();
+  module.exports = pakaiSort();
