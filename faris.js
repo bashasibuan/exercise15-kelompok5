@@ -28,3 +28,20 @@ function Kalender() {
 }
 Kalender()
 
+// Write a code to count the number of days passed since beginning of the year
+
+const tanggalSekarang = new Date();
+
+
+const tahunSekarang = tanggalSekarang.getFullYear();
+const awalTahun = new Date(tahunSekarang, 0, 1);
+
+
+const perbedaanWaktu = tanggalSekarang.getTime() - awalTahun.getTime();
+
+
+const daysPassed = Math.floor(perbedaanWaktu / (1000 * 60 * 60 * 24));
+
+console.log("Jumlah hari yang telah berlalu sejak awal tahun yaitu", daysPassed);
+
+
