@@ -6,4 +6,5 @@ function tanggalMin() {
 	console.log("Min date is - " + minimDate);
 }
 
-export default tanggalMin();
+// export default tanggalMin();
+module.exports = tanggalMin();
