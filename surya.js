@@ -51,6 +51,7 @@ function calculateArray(arr) {
 
 
   module.exports = calculateArray();
+  
 function longestPrefix(arr) {
 
 	let result = arr[0];
