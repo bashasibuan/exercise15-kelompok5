@@ -2,6 +2,18 @@ const surya = require("./surya.js");
 const faris = require("./faris.js");
 const ibas = require("./ibas.js");
 
+//1
+console.log(ibas.checkwk("21-01-2021"));
+
+//2
+console.log(ibas.gcd_two_numbers(12, 13));
+
+//3
+console.log(ibas.lcm(20, 15));
+
+//4
+console.log(ibas.test("Madam"))
+
 // 5
 console.log(surya.tanpaSort("minum air"));
 console.log(surya.pakaiSort("minum air"));
