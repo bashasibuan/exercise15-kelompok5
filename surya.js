@@ -10,4 +10,5 @@ function calculateArray(arr) {
     return sum;
   }
 
-  export default calculateArray();
+//   export default calculateArray();
+  module.exports = calculateArray();
