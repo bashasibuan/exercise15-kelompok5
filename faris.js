@@ -45,3 +45,22 @@ const daysPassed = Math.floor(perbedaanWaktu / (1000 * 60 * 60 * 24));
 console.log("Jumlah hari yang telah berlalu sejak awal tahun yaitu", daysPassed);
 
 
+// Write a code to calculate age
+
+function kalkulasiUmur(tglLahir) {
+    var today = new Date();
+    var tglLahir = new Date(tglLahir);
+    var umur = today.getFullYear() - tglLahir.getFullYear();
+    var bulan = today.getMonth() - tglLahir.getMonth();
+    
+    if (bulan < 0 || (bulan === 0 && today.getDate() < tglLahir.getDate())) {
+        umur--;
+    }
+    
+    return umur;
+    }
+    
+    
+    var ulangTahunCheck = '2005-04-03';
+    var umur = kalkulasiUmur(ulangTahunCheck);
+    console.log("umur kamu sekarang:", umur);
