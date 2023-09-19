@@ -73,3 +73,8 @@ function gcd_two_numbers(x, y) {
    return max_char.char
  }
  console.log(test("Madam"))
+
+ module.exports = checkwk();
+ module.exports = gcd_two_numbers();
+ module.exports = lcm
+ module.exports = test
