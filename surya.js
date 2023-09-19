@@ -1,3 +1,4 @@
+// Soal 5
 function tanpaSort(inputString) {
 
     const char = inputString.split('');
@@ -26,17 +27,22 @@ function pakaiSort(inputString) {
 
   module.exports = tanpaSort();
   module.exports = pakaiSort();
-  
+
+// Soal 6
+
 function tanggalMin() {
 	
 	let minimDate = new Date(Math.min.apply(null, dates));
 
 	
-	console.log("Min date is - " + minimDate);
+	return `Min date is - + ${minimDate}`;
 }
 
 
 module.exports = tanggalMin();
+
+// Soal 7
+
 function calculateArray(arr) {
     let sum = 0;
   
@@ -52,7 +58,9 @@ function calculateArray(arr) {
 
   module.exports = calculateArray();
   
-function longestPrefix(arr) {
+// Soal 8
+
+  function longestPrefix(arr) {
 
 	let result = arr[0];
 	let length = result.length;
