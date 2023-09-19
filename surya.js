@@ -63,7 +63,7 @@ function longestPrefix(arr) {
 
 
 			if (result === '') {
-				return 'huruf nya ga ada';
+			return 'huruf nya ga ada';
 			}
 		}
 	}
