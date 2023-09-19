@@ -51,3 +51,25 @@ function calculateArray(arr) {
 
 
   module.exports = calculateArray();
+function longestPrefix(arr) {
+
+	let result = arr[0];
+	let length = result.length;
+
+	for (let i = 1; i < arr.length; i++) {
+		while (arr[i].indexOf(result) !== 0) {
+			result = result.substring(0, length - 1);
+			length--;
+
+
+			if (result === '') {
+				return 'huruf nya ga ada';
+			}
+		}
+	}
+
+	return result;
+}
+
+
+module.exports = longestPrefix();
