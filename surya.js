@@ -26,3 +26,13 @@ function pakaiSort(inputString) {
 
   module.exports = tanpaSort();
   module.exports = pakaiSort();
+function tanggalMin() {
+	
+	let minimDate = new Date(Math.min.apply(null, dates));
+
+	
+	console.log("Min date is - " + minimDate);
+}
+
+
+module.exports = tanggalMin();
